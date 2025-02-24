@@ -1,0 +1,122 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+// ... existing code ... (normalize.css section remains unchanged until the custom styles)
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  font-family: Tahoma, Arial;
+}
+
+nav.menu {
+  width: 100%;
+  background-color: #4d5791;
+  height: 44px;
+  padding: 0 40px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+
+      a {
+        display: block;
+        padding: 0 20px;
+        line-height: 44px;
+        font-size: 1.4em;
+        text-decoration: none;
+        color: #fff;
+        margin: 0;
+
+        &:hover {
+          background-color: white;
+          color: #4d5791;
+        }
+      }
+    }
+  }
+}
+
+section.hero {
+  height: 350px;
+  background: {
+    color: #b4c6f0;
+    image: url('../public/bg.png');
+    size: 400px;
+    repeat: no-repeat;
+    position: center bottom;
+  }
+  padding-top: 40px;
+
+  h1, h2 {
+    text-align: center;
+    margin: 0;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 4.2em;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #4d5791;
+  }
+}
+
+.container {
+  padding: 40px;
+  width: 100%;
+
+  .text-box {
+    display: inline-block;
+    width: 100%;
+    max-width: 340px;
+    text-align: justify;
+    margin: 20px;
+
+    @media screen and (min-width: 768px) {
+      margin: 10px;
+    }
+  }
+}
+
+.page-area {
+  max-width: 768px;
+  display: inline-block;
+}
+
+.bottom {
+  height: 50px;
+  background-color: #b4c6f0;
+  padding: 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+.charts-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.chart-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px !important;
+  margin: 10px !important;
+} 
