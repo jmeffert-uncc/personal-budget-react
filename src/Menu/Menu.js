@@ -6,7 +6,7 @@ import {
 
 function Menu() {
   return (
-    <nav class="menu" aria-label="Main navigation">
+    <nav className="menu" aria-label="Main navigation">
             <ul role="menubar">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
